@@ -2,7 +2,7 @@ import processing.core.*;
 
 public class MainAppUDPMouse extends PApplet {
 
-	private ComunicacionEllipse c;
+	private ComunicacionMouse c;
 	
 	public static void main(String[] args) {
 		PApplet.main("MainAppUDPMouse");
@@ -13,7 +13,7 @@ public class MainAppUDPMouse extends PApplet {
 	}
 	
 	public void setup(){
-		c = new ComunicacionEllipse();
+		c = new ComunicacionMouse();
 		background(255);
 		c.start();
 		//ellipse(width / 2, height / 2, 50, 50);

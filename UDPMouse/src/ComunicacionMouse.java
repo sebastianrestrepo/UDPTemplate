@@ -5,13 +5,13 @@ import java.net.InetAddress;
 import java.net.SocketException;
 import java.net.UnknownHostException;
 
-public class ComunicacionEllipse extends Thread {
+public class ComunicacionMouse extends Thread {
 
 	private DatagramSocket ds;
 	private final static int PUERTO = 5000;
 	private InetAddress ip; 
 	
-	public ComunicacionEllipse() {
+	public ComunicacionMouse() {
 		try {
 			ip = InetAddress.getByName("192.168.0.4");
 			ds = new DatagramSocket();
